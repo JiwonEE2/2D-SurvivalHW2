@@ -35,11 +35,15 @@ public class Player : MonoBehaviour
 	private Rigidbody2D rb;
 	public Animator tailfireAnimCtrl;
 
+	// 플레이어 피격 애니메이션
+	private Animator damageAnimCtrl;
+
 	private void Awake()
 	{
 		moveDir = transform.Find("MoveDir");
 		fireDir = transform.Find("FireDir");
 		rb = GetComponent<Rigidbody2D>();
+		damageAnimCtrl = GetComponentInChildren<Animator>();
 	}
 
 	void Start()
@@ -175,6 +179,7 @@ public class Player : MonoBehaviour
 
 	public void TakeDamage(float damage)
 	{
+		damageAnimCtrl.SetTrigger("IsDamage");
 		//print($"아야! : {damage}");
 		if (damage < 0)
 		{
