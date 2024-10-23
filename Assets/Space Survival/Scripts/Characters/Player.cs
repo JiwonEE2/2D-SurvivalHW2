@@ -197,17 +197,17 @@ public class Player : MonoBehaviour
 		{
 			// 레벨업
 			level++;
-			this.exp -= currentMaxExp;
+
 			if (level < levelupSteps.Length)
 			{
-				currentMaxExp -= levelupSteps[level];
+				currentMaxExp = levelupSteps[level];
 			}
 
 			// 레벨업하면 레벨업 이펙트, UI, 얻게된 스킬도
 			//DoLevelUp();
 		}
 
-		levelText.text = level.ToString();
+		levelText.text = (level + 1).ToString();
 		expText.text = this.exp.ToString();
 	}
 
