@@ -109,6 +109,7 @@ public class Enemy : MonoBehaviour
 		if (collision.collider.CompareTag("Player"))
 		{
 			collision.collider.GetComponent<Player>().TakeDamage(damage);
+			// .GetContact(0).point와 transform.position의 차이는?
 			var particle = Instantiate(impactParticle, collision.GetContact(0).point, Quaternion.identity);
 			particle.Play();
 			Destroy(particle.gameObject, 2f);

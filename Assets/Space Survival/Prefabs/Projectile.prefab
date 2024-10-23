@@ -84,6 +84,7 @@ MonoBehaviour:
   damage: 10
   moveSpeed: 5
   duration: 3
+  shotParticle: {fileID: 3838720900243361667, guid: 5e05ea95e34e3b241acb1c9745fe586f, type: 3}
 --- !u!1 &2128003209349395700
 GameObject:
   m_ObjectHideFlags: 0
