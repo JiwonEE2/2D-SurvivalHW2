@@ -984,6 +984,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37a2270023a38e64c867b2fc5810b821, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  contactParticle: {fileID: 782132384435461658, guid: 1e407493c55771c42bfa8274ff0d5640, type: 3}
   healAmount: 20
 --- !u!1 &898185149
 GameObject:
@@ -1196,6 +1197,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 471a6622fec028f499d63ba347e254d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  contactParticle: {fileID: 782132384435461658, guid: 1e407493c55771c42bfa8274ff0d5640, type: 3}
 --- !u!1 &1356375150
 GameObject:
   m_ObjectHideFlags: 0
